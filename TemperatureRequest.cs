@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace RestaurantAPI
 {
-    public interface IWeatherForecastService
+    public class TemperatureRequest
     {
-        IEnumerable<WeatherForecast> Get(int count, int minTemp, int maxTemp);
+        public int Min { get; set; }
+        public int Max { get; set; }
     }
 }
